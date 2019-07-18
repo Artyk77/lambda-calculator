@@ -2,7 +2,7 @@ import React from "react";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 import Operators from './components/ButtonComponents/OperatorButtons/Operators'
 import Specials from './components/ButtonComponents/SpecialButtons/Specials'
-import "./App.css";
+import "./App.scss";
 
 import Display from './components/DisplayComponents/Display'
 // STEP 4 - import the button and display components
@@ -21,10 +21,17 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers />
-        <Operators/>
-        <Specials/>
+      
         <Display/>
+        
+        <div className = "middle-section">
+          <Specials/>
+          <Numbers />
+
+        </div>
+        <Operators/>
+
+
       </div>
     </div>
   );
